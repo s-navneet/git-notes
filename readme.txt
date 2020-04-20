@@ -31,3 +31,8 @@ how to remove remote
 git remote -v
 
 git remote rm origin
+
+how to add branch
+
+git checkout -b branchName
+csfs
