@@ -25,3 +25,9 @@ git push origin master -f
 if you want to pull
 
 git pull origin master
+
+how to remove remote
+
+git remote -v
+
+git remote rm origin
