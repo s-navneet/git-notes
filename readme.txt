@@ -3,7 +3,7 @@ and the we make a directory on local machine
 then we clone or remote
 
 
-starting
+STARTING
 
 git config --global user.name "your name"
 git config --global user.email "your email(github email acc)"
@@ -36,7 +36,7 @@ how to add branch
 
 git checkout -b branchName
 
-rebasing-----
+------------REBASEING-----
 
 git checkout dev
 git pull origin dev
@@ -45,3 +45,24 @@ git rebase dev
 RESOLVE CONFLICTS
 git add .
 git push origin branch-name --force
+
+
+
+--------CYPRESSS-WSL--------
+
+
+after install cypress perform these steps to setup cypress with wsl in window
+1. sudo apt update
+2. sudo apt upgrade
+3. sudo apt install libgtk-3-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2
+4. export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
+5. sudo /etc/init.d/dbus start &> /dev/null
+6. sudo visudo -f /etc/sudoers.d/dbus  => file open enter name here (<your_username> ALL = (root) NOPASSWD: /etc/init.d/dbus) save it
+
+after cypress version update and for open cypress
+
+1. open x-server 
+2. then open ubuntu
+3. set display (export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0)
+4. npx cypress verify
+5. npx cypress open
