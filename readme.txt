@@ -35,4 +35,13 @@ git remote rm origin
 how to add branch
 
 git checkout -b branchName
-csfs
+
+rebasing-----
+
+git checkout dev
+git pull origin dev
+git checkout branch-name
+git rebase dev
+RESOLVE CONFLICTS
+git add .
+git push origin branch-name --force
