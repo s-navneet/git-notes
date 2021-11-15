@@ -66,3 +66,8 @@ after cypress version update and for open cypress
 3. set display (export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0)
 4. npx cypress verify
 5. npx cypress open
+
+------------npm regestry-----
+npm login --registry=https://npm.pkg.github.com --scope=@geospoc
+username: <your github username>
+password: <your github personal access token>
